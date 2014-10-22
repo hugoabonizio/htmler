@@ -1,0 +1,23 @@
+html {
+
+  head {
+    title { 'Hello world!' }
+  }
+  
+  body {
+    header {
+      h1 { 'Site title' }
+    }
+    div {
+      div {
+        p { 'From the FIRST div' }
+      }
+      div {
+        p { 'From the SECOND div' }
+        p { '...and another one' }
+      }
+    }
+  
+  }
+
+}
