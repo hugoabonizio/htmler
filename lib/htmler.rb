@@ -27,4 +27,12 @@ class Htmler
     
   end
   
+  def compile(input)
+    instance_eval(input)
+  end
+  
+  def compile_file(name)
+    instance_eval(File.new(name).readlines.join)
+  end
+  
 end
