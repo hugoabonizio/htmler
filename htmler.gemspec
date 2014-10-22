@@ -3,7 +3,7 @@ require "htmler/version"
 
 Gem::Specification.new do |s|
   s.name        = "htmler"
-  s.version     = Htmler::VERSION
+  s.version     = Htmler.VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Hugo Abonizio"]
   s.email       = ["hugo_abonizio@hotmail.com"]

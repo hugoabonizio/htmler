@@ -1,5 +1,5 @@
 require 'htmler/base'
-require 'html/version'
+require 'htmler/version'
 
 class Htmler
   undef_method :p
