@@ -1,6 +1,6 @@
 # Htmler
 
-Htmler is a Ruby DSL to write HTML without have to close tags all time, this makes the job more pleasurable: the ruby way. With Htmler it's easy to write fast prototypes, generate static sites and (in future) serve Htmler template format pages.
+Htmler is a Ruby DSL to write HTML without the need to close tags all the time, making the job more pleasurable: the ruby way. With Htmler it is easier to write fast prototypes, generate static sites and (in the future) serve Htmler template format pages.
 
 ---
 
@@ -8,11 +8,9 @@ Htmler is a Ruby DSL to write HTML without have to close tags all time, this mak
 
 ```ruby
 html {
-
   head {
     title { 'Hello world!' }
-  }
-  
+  }  
   body {
     header {
       h1 { 'Site title' }
@@ -26,9 +24,7 @@ html {
         p { '...and another one' }
       }
     }
-  
   }
-
 }
 ```
 
