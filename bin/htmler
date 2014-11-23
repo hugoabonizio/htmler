@@ -1,11 +1,13 @@
 #!/usr/bin/env ruby
 
-begin
+=begin
   require 'htmler'
 rescue LoadError
   require 'rubygems'
   require 'htmler'
-end
+=end
+
+require './lib/htmler'
 
 htmler = Htmler.new
 htmler.compile_file(ARGV[0])

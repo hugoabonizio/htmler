@@ -1,0 +1,5 @@
+body {
+  4.times do |i|
+    li { i }
+  end
+}

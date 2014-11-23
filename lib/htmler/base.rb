@@ -13,7 +13,7 @@ class Htmler
     @_result += "<#{name}>"
     if block_given?
       _return = block.call
-      @_result +=  _return unless _return.nil?
+      @_result +=  _return.to_s unless _return.nil?
     end
     @_result += "</#{name}>"
     
@@ -29,7 +29,8 @@ class Htmler
   end
   
   def compile_file(name)
-    instance_eval(File.new(name).readlines.join)
+    #puts File.new(name).readlines.map { |i| i.to_s }.join
+    instance_eval(File.new(name).readlines.map { |i| i.to_s }.join)
   end
   
 end
