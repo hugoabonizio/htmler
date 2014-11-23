@@ -10,7 +10,13 @@ class Htmler
   end
 
   def method_missing(name, *args, &block)
-    @_result += "<#{name}>"
+    if args[0].class == Hash
+      arguments = " " << args[0].map { |k, v| "#{k}=\"#{v}\" " }.join(' ')
+    else
+      arguments = ""
+    end
+    
+    @_result += "<#{name}#{arguments}>"
     if block_given?
       _return = block.call
       @_result +=  _return.to_s unless _return.nil?
