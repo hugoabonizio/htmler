@@ -11,7 +11,7 @@ class Htmler
 
   def method_missing(name, *args, &block)
     if args[0].class == Hash
-      arguments = " " << args[0].map { |k, v| "#{k}=\"#{v}\" " }.join(' ')
+      arguments = " " << args[0].map { |k, v| "#{k}=\"#{v}\"" }.join(' ')
     else
       arguments = ""
     end

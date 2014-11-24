@@ -1,0 +1,5 @@
+html(lang: 'pt-BR') {
+  body {
+    input(type: 'text', value: 'value') { 'Green text' }
+  }
+}
